@@ -7,7 +7,7 @@
 
 import Foundation
 
-private class Person {
+private final class Person {
     let name: String
     let age: Int
 
@@ -17,7 +17,7 @@ private class Person {
     }
 }
 
-private class Family {
+private final class Family {
     let name: String
     var members: [Person] = []
 

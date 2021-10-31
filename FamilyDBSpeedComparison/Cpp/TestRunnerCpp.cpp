@@ -30,10 +30,10 @@ ostream& operator<<(ostream& os, const Person& person) {
 class Family {
 public:
     Family(string name) : m_name{name}, m_members{ vector<Person>{} } {}
-    void add_person(const Person& person) {
+    void add_person(const Person& person) noexcept {
         m_members.push_back(person);
     }
-    void remove_person(const Person& person) {
+    void remove_person(const Person& person) noexcept {
         m_members.erase(find(m_members.begin(), m_members.end(), person), m_members.end());
     }
     friend ostream& operator<<(ostream& os, const Family& family);
