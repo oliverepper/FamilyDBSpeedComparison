@@ -1,6 +1,7 @@
 Very naive speed comparison between languages.
 
 __Release__:
+
 SwiftStructs
 Family size: 1000000
 delta 85158 microsenconds
@@ -22,6 +23,7 @@ delta 37054 microsenconds
 or 37 milliseconds
 
 __Debug__:
+
 SwiftStructs
 Family size: 1000000
 delta 363024 microsenconds
