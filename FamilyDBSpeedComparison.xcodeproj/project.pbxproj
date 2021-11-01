@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A7902286272EE7BD005AC76D /* TestRunnerPython.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7902285272EE7BD005AC76D /* TestRunnerPython.swift */; };
+		A790228A272EE8EB005AC76D /* PythonKit in Frameworks */ = {isa = PBXBuildFile; productRef = A7902289272EE8EB005AC76D /* PythonKit */; };
+		A790228E272EED55005AC76D /* Test.py in CopyFiles */ = {isa = PBXBuildFile; fileRef = A790228B272EECA5005AC76D /* Test.py */; };
 		A7B8A21A272E92F2008F7B38 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7B8A219272E92F2008F7B38 /* main.swift */; };
 		A7B8A222272E94A5008F7B38 /* TestRunnerStructs.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7B8A221272E94A5008F7B38 /* TestRunnerStructs.swift */; };
 		A7B8A224272E95DA008F7B38 /* TestRunnerClasses.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7B8A223272E95DA008F7B38 /* TestRunnerClasses.swift */; };
@@ -17,18 +20,21 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		A7B8A214272E92F2008F7B38 /* CopyFiles */ = {
+		A790228D272EED46005AC76D /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
-			dstPath = /usr/share/man/man1/;
-			dstSubfolderSpec = 0;
+			dstPath = "";
+			dstSubfolderSpec = 16;
 			files = (
+				A790228E272EED55005AC76D /* Test.py in CopyFiles */,
 			);
-			runOnlyForDeploymentPostprocessing = 1;
+			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		A7902285272EE7BD005AC76D /* TestRunnerPython.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestRunnerPython.swift; sourceTree = "<group>"; };
+		A790228B272EECA5005AC76D /* Test.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = Test.py; sourceTree = "<group>"; };
 		A7B8A216272E92F2008F7B38 /* FamilyDBSpeedComparison */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = FamilyDBSpeedComparison; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7B8A219272E92F2008F7B38 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		A7B8A221272E94A5008F7B38 /* TestRunnerStructs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestRunnerStructs.swift; sourceTree = "<group>"; };
@@ -50,12 +56,22 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A790228A272EE8EB005AC76D /* PythonKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A7902284272EE7A0005AC76D /* Python */ = {
+			isa = PBXGroup;
+			children = (
+				A7902285272EE7BD005AC76D /* TestRunnerPython.swift */,
+				A790228B272EECA5005AC76D /* Test.py */,
+			);
+			path = Python;
+			sourceTree = "<group>";
+		};
 		A7B8A20D272E92F2008F7B38 = {
 			isa = PBXGroup;
 			children = (
@@ -76,6 +92,7 @@
 			isa = PBXGroup;
 			children = (
 				A7B8A226272E97DA008F7B38 /* FamilyDBSpeedComparison-Bridging-Header.h */,
+				A7902284272EE7A0005AC76D /* Python */,
 				A7B8A22A272E9E46008F7B38 /* C */,
 				A7B8A225272E97CA008F7B38 /* Cpp */,
 				A7B8A220272E9491008F7B38 /* Swift */,
@@ -133,13 +150,16 @@
 			buildPhases = (
 				A7B8A212272E92F2008F7B38 /* Sources */,
 				A7B8A213272E92F2008F7B38 /* Frameworks */,
-				A7B8A214272E92F2008F7B38 /* CopyFiles */,
+				A790228D272EED46005AC76D /* CopyFiles */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = FamilyDBSpeedComparison;
+			packageProductDependencies = (
+				A7902289272EE8EB005AC76D /* PythonKit */,
+			);
 			productName = FamilyDBSpeedComparison;
 			productReference = A7B8A216272E92F2008F7B38 /* FamilyDBSpeedComparison */;
 			productType = "com.apple.product-type.tool";
@@ -169,6 +189,9 @@
 				Base,
 			);
 			mainGroup = A7B8A20D272E92F2008F7B38;
+			packageReferences = (
+				A7902288272EE8EB005AC76D /* XCRemoteSwiftPackageReference "PythonKit" */,
+			);
 			productRefGroup = A7B8A217272E92F2008F7B38 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -188,6 +211,7 @@
 				A7B8A21A272E92F2008F7B38 /* main.swift in Sources */,
 				A7B8A22F272E9E78008F7B38 /* TestRunnerC.c in Sources */,
 				A7B8A23D272EA051008F7B38 /* person.c in Sources */,
+				A7902286272EE7BD005AC76D /* TestRunnerPython.swift in Sources */,
 				A7B8A224272E95DA008F7B38 /* TestRunnerClasses.swift in Sources */,
 				A7B8A229272E97DA008F7B38 /* TestRunnerCpp.cpp in Sources */,
 			);
@@ -319,6 +343,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = AWJ83G3EPY;
 				ENABLE_HARDENED_RUNTIME = YES;
+				GCC_OPTIMIZATION_LEVEL = fast;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
@@ -326,7 +351,7 @@
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "FamilyDBSpeedComparison/FamilyDBSpeedComparison-Bridging-Header.h";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
@@ -372,6 +397,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A7902288272EE8EB005AC76D /* XCRemoteSwiftPackageReference "PythonKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pvieito/PythonKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.1.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A7902289272EE8EB005AC76D /* PythonKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A7902288272EE8EB005AC76D /* XCRemoteSwiftPackageReference "PythonKit" */;
+			productName = PythonKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = A7B8A20E272E92F2008F7B38 /* Project object */;
 }

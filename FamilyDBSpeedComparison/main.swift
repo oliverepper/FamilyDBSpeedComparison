@@ -7,7 +7,6 @@
 
 import Foundation
 
-
 func measure(_ name: String, _ block: @escaping () -> Void) {
     print(name)
     var start = timespec()
@@ -34,5 +33,9 @@ measure("Cpp") {
 
 measure("C") {
     runC()
+}
+
+measure("Python") {
+    runPython()
 }
 
